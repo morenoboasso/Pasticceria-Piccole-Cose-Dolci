@@ -1,0 +1,97 @@
+/* styles.css */
+body{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h5 a {
+  text-decoration: none; /* Rimuove l'underline */
+  color: black; /* Imposta il colore del testo a nero */
+  cursor: pointer; /* Cambia l'aspetto del cursore per indicare che è cliccabile */
+}
+
+h5 a:hover {
+  text-decoration: underline; /* Aggiunge l'underline quando il mouse passa sopra */
+}
+/* colore text primario */
+.text-primary-custom {
+  color: black;
+}
+/* colore text secondario */
+.text-secondary-custom {
+  color: rgba(101, 101, 101, 0.74);
+}
+/* colore sfondo collapse */
+.collapse-custom{
+  background-color:#ffe0ab;  
+}
+/* colore hamburger collapse  */
+.collapse-icon-custom{
+  color:#ffe0ab;  
+}
+/* appbar sfondo arancione */
+.appbar-custom{
+  background: #ffd388;
+}
+.navbar-nav li.dropdown:hover .nav-link,
+.navbar-nav li.dropdown:hover .dropdown-menu a:hover {
+    background-color:transparent;
+}
+/* sfondo footer rosino chiaro */
+.footer-custom{
+  background: #f5f5f5;
+}
+/* colore sfondo card + allineamento text card */
+.card-custom {
+  background-color: #fdf6e9cb; 
+  text-align:left;
+}
+.card-custom:hover {
+  transform: scale(1.03); /* Aumenta leggermente la dimensione della card al passaggio del mouse */
+  transition: transform 0.5s ease; /* Aggiunge una transizione fluida all'effetto di hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Aggiunge una leggera ombra al passaggio del mouse */
+}
+.card-custom {
+  position: relative; /* Aggiungi questa proprietà per posizionare l'elemento genitore per sovrapporre il bordo */
+}
+
+.card-custom::before {
+  content: ""; /* Contenuto fittizio per creare il bordo pseudo-elemento */
+  position: absolute; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* Posiziona il bordo dietro la card */
+  border: 1px solid transparent; 
+  background: linear-gradient(to right, #ffa94161, #ff89f764); /* Gradient arancione */
+  border-radius: 8px; 
+  opacity: 0; 
+  transition: opacity 0.5s, transform 0.5s; /* Aggiungi transizioni di opacità e trasformazione */
+}
+
+.card-custom:hover::before {
+  opacity: 1; 
+  transform: scale(1.02); 
+}
+
+
+
+.card-text-custom{
+  font-size: 20px;
+}
+
+.card-text-descr-custom{
+  font-size: 15px;
+  color: rgb(151, 151, 151);
+}
+
+
+.contacts-custom
+{
+  color: #ff8737;
+}
+
+.dropdown-menu a.dropdown-item:hover {
+  color: #cd7306; /* Cambia il colore del testo al passaggio del mouse */
+  background-color: #cd7306;
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Piccole Cose Dolci",
+    "short_name": "Piccole Cose Dolci",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#fed4a7",
+    "background_color": "#fed4a7",
+    "start_url": "https://piccole-cose-dolci.neocities.org/",
+    "display": "standalone"
+}
