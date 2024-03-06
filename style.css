@@ -95,3 +95,8 @@ h5 a:hover {
   color: #cd7306; /* Cambia il colore del testo al passaggio del mouse */
   background-color: #cd7306;
 }
+
+.custom-section {
+  margin-top: -70px; /* Regola questo valore in base alle tue esigenze */
+  padding-top: 70px; /* Assicurati che il padding sia uguale al valore del margine superiore */
+}

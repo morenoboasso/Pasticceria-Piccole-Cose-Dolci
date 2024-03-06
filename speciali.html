@@ -58,8 +58,166 @@
     </div>
   </nav>
 
+  <!-- input nav -->
+  <div class="input-group mb-3 fixed-top">
+    <select class="form-select text-center" id="inputGroupSelect01" onchange="navigateToSection()">
+      <option selected value="natale" data-date="12-25">🎄 Natale</option>
+      <option value="pasqua" data-date="04-21">🐣 Pasqua</option>
+      <option value="san-valentino" data-date="02-14">🌹 San Valentino</option>
+      <option value="festapapa" data-date="03-19">👨 Festa del Papà</option>
+      <option value="festamamma" data-date="05-12">👩 Festa della Mamma</option>
+      <option value="carnavel" data-date="02-25">🎭 Carnevale</option>
+      <option value="halloween" data-date="10-31">🎃 Halloween</option>
+      <option value="epifania" data-date="01-06">🧹 Epifania</option>
+    </select>
+  </div>
+  
+
+
+
+<!-- Sezione Natale -->
+<section id="natale" class="container-fluid custom-section" data-date="12-25">
+  <h2 class="speciali">Natale</h2>
+
+<div class="container-fluid mt-4">
+  <!-- Qui inizia il contenuto della sezione Dolci -->
+  <div class="row" id="dolci">
+    <!-- Prima riga -->
+    <div class="col-lg-3 col-md-4 col-6 mb-4">
+      <div class="card shadow card-custom">
+        <img src="assets/salatini.png" class="card-img-top" alt="Salatini immagine" />
+        <div class="card-body">
+          <h5 class="card-title card-text-custom">Salatini</h5>
+          <p class="card-text-descr-custom">Gusto: </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-3 col-md-4 col-6 mb-4">
+      <div class="card shadow card-custom">
+        <img src="assets/salatini.png" class="card-img-top" alt="Salatini immagine" />
+        <div class="card-body">
+          <h5 class="card-title card-text-custom">Salatini</h5>
+          <p class="card-text-descr-custom">Gusto: </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6 mb-4">
+      <div class="card shadow card-custom">
+        <img src="assets/salatini.png" class="card-img-top" alt="Salatini immagine" />
+        <div class="card-body">
+          <h5 class="card-title card-text-custom">Salatini</h5>
+          <p class="card-text-descr-custom">Gusto: </p>
+        </div>
+      </div>
+    </div>
+    <!-- Seconda riga -->
+    <div class="col-lg-3 col-md-4 col-6 mb-4">
+      <div class="card shadow card-custom">
+        <img src="assets/salatini.png" class="card-img-top" alt="Salatini immagine" />
+        <div class="card-body">
+          <h5 class="card-title card-text-custom">Salatini</h5>
+          <p class="card-text-descr-custom">Gusto: </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6 mb-4">
+      <div class="card shadow card-custom">
+        <img src="assets/salatini.png" class="card-img-top" alt="Salatini immagine" />
+        <div class="card-body">
+          <h5 class="card-title card-text-custom">Salatini</h5>
+          <p class="card-text-descr-custom">Gusto: </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6 mb-4">
+      <div class="card shadow card-custom">
+        <img src="assets/salatini.png" class="card-img-top" alt="Salatini immagine" />
+        <div class="card-body">
+          <h5 class="card-title card-text-custom">Salatini</h5>
+          <p class="card-text-descr-custom">Gusto: </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<br>
+
+<!-- Sezione Pasqua -->
+<section id="pasqua"   class="container-fluid custom-section" data-date="04-20">
+  <h2 class="speciali">Pasqua</h2>
+
+ 
+
+    
+
+</section>
+<br>
+
+<!-- Sezione San Valentino -->
+<section id="san-valentino"   class="container-fluid custom-section" data-date="02-14">
+  <h2 class="speciali">San Valentino</h2>
+
+ 
+
+    
+
+</section>
+<br>
+
+<!-- Sezione Festa del Papà -->
+<section id="festapapa"   class="container-fluid custom-section" data-date="03-19">
+  <h2 class="speciali">Festa del Papà</h2>
 
   
+
+</section>
+<br>
+
+<!-- Sezione Festa della Mamma -->
+<section id="festamamma"   class="container-fluid custom-section" data-date="05-12">
+  <h2 class="speciali">Festa della Mamma</h2>
+
+
+  
+
+</section>
+<br>
+
+<!-- Sezione Carnevale -->
+<section id="carnevale"   class="container-fluid custom-section" data-date="02-05">
+  <h2 class="speciali">Carnevale</h2>
+
+  
+
+</section>
+<br>
+
+<!-- Sezione Halloween -->
+<section id="halloween"   class="container-fluid custom-section" data-date="10-31">
+  <h2 class="speciali">Halloween</h2>
+
+
+
+
+</section>
+<br>
+
+<!-- Sezione Epifania -->
+<section id="epifania"   class="container-fluid custom-section" data-date="01-06">
+  <h2 class="speciali">Epifania</h2>
+
+ 
+
+    
+
+</section>
+<br>
+
   </footer>
 
 
@@ -68,19 +226,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 
+  
 
-  <!-- Script per gestire il reindirizzamento -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var links = document.querySelectorAll(".navbar-nav a.nav-link");
-      links.forEach(function (link) {
-        link.addEventListener("click", function (event) {
-          event.preventDefault();
-          window.location.href = this.getAttribute("href");
-        });
-      });
-    });
-  </script>
+  <script src="script.js"></script>
+
 </body>
 
 </html>
