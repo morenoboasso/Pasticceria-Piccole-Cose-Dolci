@@ -91,12 +91,19 @@ h5 a:hover {
   color: #ff8737;
 }
 
-.dropdown-menu a.dropdown-item:hover {
-  color: #cd7306; /* Cambia il colore del testo al passaggio del mouse */
-  background-color: #cd7306;
+.custom-section {
+  margin-top: -130px; /* Regola questo valore in base alle tue esigenze */
+  padding-top: 130px; /* Assicurati che il padding sia uguale al valore del margine superiore */
 }
 
-.custom-section {
-  margin-top: -70px; /* Regola questo valore in base alle tue esigenze */
-  padding-top: 70px; /* Assicurati che il padding sia uguale al valore del margine superiore */
+.speciali{
+  text-align: center;
+}
+
+.sticky-input {
+  position: sticky;
+  text-align: center;
+  top: 86px; /* Altezza della navbar */
+  z-index: 1000; /* Assicura che l'input sia sopra il resto del contenuto */
+  background-color: #ffffff; /* Colore di sfondo, puoi adattarlo al tuo design */
 }
