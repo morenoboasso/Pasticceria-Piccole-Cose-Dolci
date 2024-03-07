@@ -5,30 +5,32 @@ i prodotti con > vuol dire Personalizzabile
 ==Dolci Dolce Pasticcini Dolcetti==
 Torrone
 *Bicchierini Mousse
-pavlova fruttata/caramello salato
+*pavlova
+>croissant
 
 ==Salatini Salato Salati==
 
 
 ==Torte Torta==
->Torta Personalizzabile
 >Torta per compleanni
->Torta di pasticcini per compleanno
+>Torta Personalizzabile
 >Number Cake
 red velvet
+>Torta di pasticcini per compleanno
 
 ==Festivo Festive Festa Festività Speciali==
 
 
 --Pasqua--
 Coniglio di pasqua
-Biscotti uova di pasqua
+*Biscotti uova di pasqua
+*uovo al cocco (solo ritagliare un po)
 
 --Halloween--
 Zombie cioccolato
 *Crostata Zucca
 *Biscotti fantasma
-
+Crostata cioccolato
 --papa papà--
 torta dad
 
