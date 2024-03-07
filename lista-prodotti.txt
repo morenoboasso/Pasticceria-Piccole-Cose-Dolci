@@ -1,17 +1,28 @@
+i prodotti con * davanti vuol dire (rifare foto)
+i prodotti con > vuol dire Personalizzabile
+
+
 ==Dolci Dolce Pasticcini Dolcetti==
 Torrone
-
+*Bicchierini Mousse
 
 ==Salatini Salato Salati==
 
 
-
 ==Torte Torta==
+>Torta Personalizzabile
+>Torta per compleanni
+>Torta di pasticcini per compleanno
+>Number Cake
+red velvet
 
-Torta Personalizzabile
-Torta di pasticcini per compleanno
+==Festivo Festive Festa Festività Speciali  Natale befana mamma papa==
 
 
-==Festivo Festive Festa Festività Speciali Pasqua Halloween Natale befana mamma papa==
+--Pasqua--
+Coniglio di pasqua
 
-Uovo di pasqua
+--Halloween--
+Zombie cioccolato
+*Crostata Zucca
+*Biscotti fantasma

@@ -57,6 +57,9 @@ h5 a:hover {
   position: relative; /* Aggiungi questa proprietà per posizionare l'elemento genitore per sovrapporre il bordo */
   overflow: hidden; /* Nasconde il contenuto in eccesso */
 }
+.card{
+  height: 333px;
+}
 
 .card-custom::before {
   content: ""; /* Contenuto fittizio per creare il bordo pseudo-elemento */
@@ -67,7 +70,7 @@ h5 a:hover {
   left: 0;
   z-index: -1; /* Posiziona il bordo dietro la card */
   border: 0.5px solid transparent; 
-  background: linear-gradient(to right, #ffa94161, #ff89f764); /* Gradient arancione */
+  background: linear-gradient(to right, #ffa94161, #ffdd328a); /* Gradient arancione */
   border-radius: 8px; 
   opacity: 0; 
   transition: opacity 0.5s, transform 0.5s; /* Aggiungi transizioni di opacità e trasformazione */
@@ -186,4 +189,25 @@ h5 a:hover {
   .card-text-descr-custom {
     font-size: 10px; /* Imposta la dimensione del carattere per la descrizione delle carte su dispositivi mobili */
   }
+}
+
+
+.custom-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2px 2px;
+  border-radius: 0 0 10px 0; /* Per un angolo arrotondato in alto a sinistra */
+  background: linear-gradient(to right, #ffdd328a, #ffa94161);
+}
+
+.card-custom:hover .custom-label {
+  z-index: 1; /* Posiziona il bordo dietro la card */
+  background: #fdf6e9cb; /* Cambia il colore di sfondo dell'etichetta durante l'hover sulla card */
+}
+
+
+.label-text {
+  margin: 0;
+  font-size: 14px;
 }
