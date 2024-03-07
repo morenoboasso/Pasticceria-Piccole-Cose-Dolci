@@ -8,6 +8,43 @@
       });
     });
 
+    document.addEventListener("DOMContentLoaded", function () {
+      // Verifica se il cookie di accettazione è presente
+      const cookieAccepted = localStorage.getItem("cookieAccepted");
+    
+      // Se il cookie non è stato accettato, mostra il banner
+      if (!cookieAccepted) {
+        const cookieBanner = document.createElement("div");
+        cookieBanner.innerHTML = `
+          <div class="cookie-banner text-white text-center py-2 bg-dark fixed-bottom">
+            Questo sito utilizza i cookie per garantire una migliore esperienza di navigazione. 
+            <button class="btn btn-success btn-sm ms-2" id="acceptCookie">Accetta</button>
+            <button class="btn btn-danger btn-sm ms-2" id="rejectCookie">Rifiuta</button>
+          </div>
+        `;
+    
+        // Aggiungi il banner al corpo del documento
+        document.body.appendChild(cookieBanner);
+    
+        // Aggiungi un listener al pulsante di accettazione dei cookie
+        document.getElementById("acceptCookie").addEventListener("click", function () {
+          // Nascondi il banner
+          cookieBanner.style.display = "none";
+    
+          // Imposta il cookie di accettazione
+          localStorage.setItem("cookieAccepted", true);
+        });
+    
+        // Aggiungi un listener al pulsante di rifiuto dei cookie
+        document.getElementById("rejectCookie").addEventListener("click", function () {
+          // Nascondi il banner
+          cookieBanner.style.display = "none";
+    
+          // Puoi fare ulteriori azioni qui se necessario
+        });
+      }
+    });
+    
 
     function navigateToSection() {
         const selectElement = document.getElementById("inputGroupSelect01");
@@ -20,4 +57,39 @@
           }
         }
       }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const previewModal = new bootstrap.Modal(document.getElementById('previewModal'));
+        const previewContent = document.getElementById('previewContent');
+        const previewImage = document.getElementById('previewImage');
+        const previewTitle = document.getElementById('previewTitle');
+        const previewDescription = document.getElementById('previewDescription');
+      
+        const cardElements = document.querySelectorAll('.card-custom');
+      
+        cardElements.forEach((card, index) => {
+          const image = card.querySelector('img');
+          const title = card.querySelector('.card-title');
+          const description = card.querySelector('.card-text-descr-custom');
+      
+          card.addEventListener('click', function (event) {
+            // Aggiorna i contenuti nella modal con quelli della card cliccata
+            previewImage.src = image.src;
+            previewTitle.textContent = title.textContent;
+            previewDescription.textContent = description.textContent;
+            // Apri il modal
+            previewModal.show();
+            
+            // Impedisci la propagazione dell'evento click per evitare la chiusura immediata
+            event.stopPropagation();
+          });
+        });
+      
+        // Aggiungi un event listener al documento per chiudere la modal quando si fa clic al di fuori di essa
+        document.addEventListener('click', function () {
+          previewModal.hide();
+        });
+      });
+      
+
     
