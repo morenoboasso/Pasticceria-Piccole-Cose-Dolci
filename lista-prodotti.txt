@@ -5,6 +5,7 @@ i prodotti con > vuol dire Personalizzabile
 ==Dolci Dolce Pasticcini Dolcetti==
 Torrone
 *Bicchierini Mousse
+pavlova fruttata/caramello salato
 
 ==Salatini Salato Salati==
 
@@ -16,13 +17,24 @@ Torrone
 >Number Cake
 red velvet
 
-==Festivo Festive Festa Festività Speciali  Natale befana mamma papa==
+==Festivo Festive Festa Festività Speciali==
 
 
 --Pasqua--
 Coniglio di pasqua
+Biscotti uova di pasqua
 
 --Halloween--
 Zombie cioccolato
 *Crostata Zucca
 *Biscotti fantasma
+
+--papa papà--
+torta dad
+
+-san valentino--
+macaron cuore
+
+--natale--
+torte varie
+tronchetti
