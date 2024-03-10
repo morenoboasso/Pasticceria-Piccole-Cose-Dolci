@@ -191,7 +191,7 @@ h5 a:hover {
   }
 }
 
-
+/* personalizzabile */
 .custom-label {
   position: absolute;
   top: 0;
@@ -205,6 +205,22 @@ h5 a:hover {
   z-index: 1; /* Posiziona il bordo dietro la card */
   background: #fdf6e9cb; /* Cambia il colore di sfondo dell'etichetta durante l'hover sulla card */
 }
+
+/* senza lattosio */
+.custom-label-left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 2px;
+  border-radius: 0 0 0 10px; /* Per un angolo arrotondato in alto a destra */
+  background: linear-gradient(to left, #c1fdff, #ededed);
+}
+
+.card-custom:hover .custom-label-left {
+  z-index: 1; /* Posiziona il bordo dietro la card */
+  background: #fdf6e9cb; /* Cambia il colore di sfondo dell'etichetta durante l'hover sulla card */
+}
+
 
 
 .label-text {
