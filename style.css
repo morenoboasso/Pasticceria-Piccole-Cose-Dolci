@@ -91,7 +91,7 @@ h5 a:hover {
   font-size: 12px;
   color: rgb(151, 151, 151);
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Imposta il numero massimo di linee */
+  -webkit-line-clamp: 1; /* Imposta il numero massimo di linee */
   -webkit-box-orient: vertical;
   overflow: hidden; /* Nasconde il testo che eccede la larghezza del container */
   text-overflow: ellipsis;
@@ -129,6 +129,7 @@ h5 a:hover {
 }
 .modal-custom {
   background-color: #fff7e8
+  
 }
 
 /* Altezza per tablet (medium) */
@@ -207,21 +208,28 @@ h5 a:hover {
 }
 
 /* senza lattosio */
-.custom-label-left {
+.custom-label-lat {
   position: absolute;
   top: 0;
   right: 0;
   padding: 2px 2px;
   border-radius: 0 0 0 10px; /* Per un angolo arrotondato in alto a destra */
-  background: linear-gradient(to left, #c1fdff, #ededed);
+  background: linear-gradient(to left, #fff1ccbd, #edededf2);
+  z-index: 1; /* Posiziona il bordo dietro la card */
 }
 
-.card-custom:hover .custom-label-left {
+.card-custom:hover .custom-label-lat {
   z-index: 1; /* Posiziona il bordo dietro la card */
   background: #fdf6e9cb; /* Cambia il colore di sfondo dell'etichetta durante l'hover sulla card */
 }
 
+.card img {
+  filter: drop-shadow(6px 6px 5px rgba(87, 87, 87, 0.719)); /* Puoi regolare i valori per adattarli alle tue preferenze */
+}
 
+.modal img {
+  filter: drop-shadow(6px 6px 5px rgba(87, 87, 87, 0.719)); /* Puoi regolare i valori per adattarli alle tue preferenze */
+}
 
 .label-text {
   margin: 0;
