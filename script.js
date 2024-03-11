@@ -7,6 +7,7 @@
         });
       });
     });
+    
 
     document.addEventListener("DOMContentLoaded", function () {
       // Verifica se il cookie di accettazione è presente
@@ -92,4 +93,24 @@
       });
       
 
-    
+    // Funzione per chiudere il popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+  }
+
+  // Verifica se è la prima visita utilizzando i cookie
+  function isFirstVisit() {
+      return document.cookie.indexOf('visited=true') === -1;
+  }
+
+  // Mostra il popup solo se è la prima visita
+  if (isFirstVisit()) {
+      document.getElementById('popup').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+
+      // Imposta un cookie per indicare che il sito è stato visitato
+      document.cookie = 'visited=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+  }
+
+  

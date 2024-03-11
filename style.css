@@ -1,237 +1,236 @@
-/* styles.css */
-body{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .cookie-banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, .1)
 }
 
 h5 a {
-  text-decoration: none; /* Rimuove l'underline */
-  color: black; /* Imposta il colore del testo a nero */
-  cursor: pointer; /* Cambia l'aspetto del cursore per indicare che è cliccabile */
+  text-decoration: none;
+  color: black;
+  cursor: pointer
 }
 
 h5 a:hover {
-  text-decoration: underline; /* Aggiunge l'underline quando il mouse passa sopra */
+  text-decoration: underline
 }
-/* colore text primario */
+
 .text-primary-custom {
-  color: black;
+  color: black
 }
-/* colore text secondario */
+
 .text-secondary-custom {
-  color: rgba(101, 101, 101, 0.74);
+  color: rgba(101, 101, 101, .74)
 }
-/* colore sfondo collapse */
-.collapse-custom{
-  background-color:#ffe0ab;  
+
+.collapse-custom {
+  background-color: #ffe0ab
 }
-/* colore hamburger collapse  */
-.collapse-icon-custom{
-  color:#ffe0ab;  
+
+.collapse-icon-custom {
+  color: #ffe0ab
 }
-/* appbar sfondo arancione */
-.appbar-custom{
-  background: #ffd388;
+
+.appbar-custom {
+  background: #ffd388
 }
+
 .navbar-nav li.dropdown:hover .nav-link,
 .navbar-nav li.dropdown:hover .dropdown-menu a:hover {
-    background-color:transparent;
+  background-color: transparent
 }
-/* colore sfondo card + allineamento text card */
+
 .card-custom {
-  background-color: #fdf6e9cb; 
-  text-align:left;
+  background-color: #fdf6e9cb;
+  text-align: left
 }
+
 .card-custom:hover {
-  transform: scale(1.03); /* Aumenta leggermente la dimensione della card al passaggio del mouse */
-  transition: transform 0.5s ease; /* Aggiunge una transizione fluida all'effetto di hover */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Aggiunge una leggera ombra al passaggio del mouse */
+  transform: scale(1.03);
+  transition: transform .5s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .3)
 }
+
 .card-custom {
-  position: relative; /* Aggiungi questa proprietà per posizionare l'elemento genitore per sovrapporre il bordo */
-  overflow: hidden; /* Nasconde il contenuto in eccesso */
+  position: relative;
+  overflow: hidden
 }
-.card{
-  height: 333px;
+
+.card {
+  height: 333px
 }
 
 .card-custom::before {
-  content: ""; /* Contenuto fittizio per creare il bordo pseudo-elemento */
-  position: absolute; 
+  content: "";
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1; /* Posiziona il bordo dietro la card */
-  border: 0.5px solid transparent; 
-  background: linear-gradient(to right, #ffa94161, #ffdd328a); /* Gradient arancione */
-  border-radius: 8px; 
-  opacity: 0; 
-  transition: opacity 0.5s, transform 0.5s; /* Aggiungi transizioni di opacità e trasformazione */
+  z-index: -1;
+  border: .5px solid transparent;
+  background: linear-gradient(to right, #ffa94161, #ffdd328a);
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity .5s, transform .5s
 }
 
 .card-custom:hover::before {
-  opacity: 1; 
-  transform: scale(1.02); 
+  opacity: 1;
+  transform: scale(1.02)
 }
 
-
-
-.card-text-custom{
-  font-size: 20px;
+.card-text-custom {
+  font-size: 20px
 }
 
-.card-text-descr-custom{
+.card-text-descr-custom {
   font-size: 12px;
   color: rgb(151, 151, 151);
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* Imposta il numero massimo di linee */
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  overflow: hidden; /* Nasconde il testo che eccede la larghezza del container */
-  text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis
 }
 
-
-.contacts-custom
-{
-  color: #2d1e01cb;
+.contacts-custom {
+  color: #2d1e01cb
 }
 
 .custom-section {
-  margin-top: -110px; /* Regola questo valore in base alle tue esigenze */
-  padding-top: 110px; /* Assicurati che il padding sia uguale al valore del margine superiore */
+  margin-top: -110px;
+  padding-top: 110px
 }
 
-.speciali{
-  text-align: center;
+.speciali {
+  text-align: center
 }
 
 .sticky-input {
   position: sticky;
   text-align: center;
-  top: 66px; /* Altezza della navbar */
-  z-index: 1000; /* Assicura che l'input sia sopra il resto del contenuto */
-  background-color: #ffffff; /* Colore di sfondo, puoi adattarlo al tuo design */
+  top: 66px;
+  z-index: 1000;
+  background-color: #fff
 }
 
-@media (max-width: 576px) {
+@media (max-width:576px) {
   .fixed-size-image {
     width: 100%;
-    height: 250px; /* Altezza desiderata per dispositivi mobili */
-    object-fit: scale-down;
+    height: 250px;
+    object-fit: contain
   }
 }
+
 .modal-custom {
   background-color: #fff7e8
-  
 }
 
-/* Altezza per tablet (medium) */
-@media (min-width: 577px) and (max-width: 992px) {
+@media (min-width:577px) and (max-width:992px) {
   .fixed-size-image {
     width: 100%;
-    height: 200px; /* Altezza desiderata per tablet */
-    object-fit: scale-down;
+    height: 200px;
+    object-fit: contain
   }
 }
 
-/* Altezza per desktop (large) */
-@media (min-width: 993px) {
+@media (min-width:993px) {
   .fixed-size-image {
     width: 100%;
-    height: 230px; /* Altezza desiderata per desktop */
-    object-fit: scale-down;
+    height: 230px;
+    object-fit: contain
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width:576px) {
   .fixed-size-image-modal {
     width: 100%;
-    height: 220px; /* Altezza desiderata per dispositivi mobili */
-    object-fit: scale-down;
+    height: 220px;
+    object-fit: contain
   }
 }
 
-/* Altezza per tablet (medium) */
-@media (min-width: 577px) and (max-width: 992px) {
+@media (min-width:577px) and (max-width:992px) {
   .fixed-size-image-modal {
     width: 100%;
-    height: 300px; /* Altezza desiderata per tablet */
-    object-fit: scale-down;
+    height: 300px;
+    object-fit: contain
   }
 }
 
-/* Altezza per desktop (large) */
-@media (min-width: 993px) {
+@media (min-width:993px) {
   .fixed-size-image-modal {
     width: 100%;
-    height: 500px; /* Altezza desiderata per desktop */
-    object-fit: scale-down;
+    height: 500px;
+    object-fit: contain
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width:576px) {
   .card-text-custom {
-    font-size: 12px; /* Imposta la dimensione del carattere per il testo delle carte su dispositivi mobili */
+    font-size: 12px
   }
-  .text-secondary-custom{
-    font-size: 12px;
+
+  .text-secondary-custom {
+    font-size: 12px
   }
-  .text-primary-custom{
-    font-size: 14;
+
+  .text-primary-custom {
+    font-size: 14
   }
 
   .card-text-descr-custom {
-    font-size: 10px; /* Imposta la dimensione del carattere per la descrizione delle carte su dispositivi mobili */
+    font-size: 10px
   }
 }
-
 /* personalizzabile */
 .custom-label {
   position: absolute;
   top: 0;
   left: 0;
   padding: 2px 2px;
-  border-radius: 0 0 10px 0; /* Per un angolo arrotondato in alto a sinistra */
-  background: linear-gradient(to right, #ffdd328a, #ffa94161);
+  border-radius: 0 0 10px 0;
+  background: linear-gradient(to right, #ffdd32d7, #ffaa41c6);
+  z-index: 1;
+  font-size: 10px; /* Set the text size */
 }
 
 .card-custom:hover .custom-label {
-  z-index: 1; /* Posiziona il bordo dietro la card */
-  background: #fdf6e9cb; /* Cambia il colore di sfondo dell'etichetta durante l'hover sulla card */
+  z-index: 1;
+  background: #fdf6e9cb
 }
-
 /* senza lattosio */
 .custom-label-lat {
   position: absolute;
   top: 0;
   right: 0;
   padding: 2px 2px;
-  border-radius: 0 0 0 10px; /* Per un angolo arrotondato in alto a destra */
+  border-radius: 0 0 0 10px;
   background: linear-gradient(to left, #fff1ccbd, #edededf2);
-  z-index: 1; /* Posiziona il bordo dietro la card */
+  z-index: 1;
+  font-size: 10px; /* Set the text size */
 }
 
 .card-custom:hover .custom-label-lat {
-  z-index: 1; /* Posiziona il bordo dietro la card */
-  background: #fdf6e9cb; /* Cambia il colore di sfondo dell'etichetta durante l'hover sulla card */
+  z-index: 1;
+  background: #fdf6e9cb
 }
 
 .card img {
-  filter: drop-shadow(6px 6px 5px rgba(87, 87, 87, 0.719)); /* Puoi regolare i valori per adattarli alle tue preferenze */
+  filter: drop-shadow(6px 6px 5px rgba(87, 87, 87, .719))
 }
 
 .modal img {
-  filter: drop-shadow(6px 6px 5px rgba(87, 87, 87, 0.719)); /* Puoi regolare i valori per adattarli alle tue preferenze */
+  filter: drop-shadow(6px 6px 5px rgba(87, 87, 87, .719))
+
 }
 
 .label-text {
   margin: 0;
-  font-size: 14px;
+  font-size: 14px
 }
