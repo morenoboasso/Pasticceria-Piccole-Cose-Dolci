@@ -6,8 +6,6 @@
     "display": "standalone",
     "background_color": "#ffd388",
     "theme_color": "#ffd388",
-    "lang": "it",
-    "orientation": "portrait",
     "icons": [
       {
         "src": "favicons/apple-touch-icon.png",
