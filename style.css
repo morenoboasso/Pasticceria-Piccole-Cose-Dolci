@@ -32,9 +32,6 @@ h5 a:hover {
   background-color: #ffe0ab;
 }
 
-.collapse-icon-custom {
-  color: #ffe0ab;
-}
 
 /* Adattamento per dispositivi mobili */
 @media (max-width: 767px) {

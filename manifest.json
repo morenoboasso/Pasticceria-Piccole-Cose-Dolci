@@ -1,7 +1,7 @@
 {
     "name": "Piccole Cose Dolci",
-    "short_name": "PiccoleCoseDolci",
-    "description": "Pasticceria artigianale a Moncalieri",
+    "short_name": "Piccole Cose Dolci",
+    "description": "Pasticceria artigianale a Moncalieri(TO)",
     "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#ffd388",
@@ -10,17 +10,20 @@
       {
         "src": "favicons/apple-touch-icon.png",
         "sizes": "180x180",
-        "type": "image/png"
+        "type": "image/png",
+        "purpose": "maskable"
       },
       {
         "src": "favicons/favicon-32x32.png",
         "sizes": "32x32",
-        "type": "image/png"
+        "type": "image/png",
+        "purpose": "maskable"
       },
       {
         "src": "favicons/favicon-16x16.png",
         "sizes": "16x16",
-        "type": "image/png"
+        "type": "image/png",
+        "purpose": "maskable"
       }
     ]
   }
