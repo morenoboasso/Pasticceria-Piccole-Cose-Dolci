@@ -13,8 +13,9 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#fed4a7",
-    "background_color": "#fed4a7",
-    "start_url": "https://piccole-cose-dolci.neocities.org/",
-    "display": "standalone"
+    "theme_color": "#ffd388",
+    "background_color": "#ffd388",
+    "start_url": "https://morenoboasso.github.io/Pasticceria-Piccole-Cose-Dolci/index.html",
+    "display": "standalone",
+    "orientation": "portrait"
 }
