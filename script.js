@@ -113,4 +113,9 @@
       document.cookie = 'visited=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
   }
 
-  
+  // Al momento, la nuvoletta non fa nulla quando viene cliccata
+  document.getElementById('chatBotContainer').addEventListener('click', function() {
+    // Azioni da eseguire quando la nuvoletta viene cliccata
+    // Per ora, non fa nulla
+});
+

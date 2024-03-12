@@ -27,13 +27,28 @@ h5 a:hover {
   color: rgba(101, 101, 101, .74)
 }
 
+/* Stili predefiniti */
 .collapse-custom {
-  background-color: #ffe0ab
+  background-color: #ffe0ab;
 }
 
 .collapse-icon-custom {
-  color: #ffe0ab
+  color: #ffe0ab;
 }
+
+/* Adattamento per dispositivi mobili */
+@media (max-width: 767px) {
+  .collapse-custom {
+    /* Dimensioni più piccole su mobile */
+    padding: 5px; /* Esempio: regola il padding secondo le tue preferenze */
+  }
+
+  .collapse-icon-custom {
+    /* Dimensioni più piccole su mobile */
+    font-size: 16px; /* Esempio: regola la dimensione del carattere secondo le tue preferenze */
+  }
+}
+
 
 .appbar-custom {
   background: #ffd388
@@ -117,6 +132,10 @@ h5 a:hover {
   top: 66px;
   z-index: 1000;
   background-color: #fff
+}
+
+.fixed-size-image{
+  padding: 15px;
 }
 
 @media (max-width:576px) {
@@ -233,4 +252,74 @@ h5 a:hover {
 .label-text {
   margin: 0;
   font-size: 14px
+}
+
+/* QNA */
+.chatbotcontainer {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 15px;
+  right: 25px;
+  cursor: pointer;
+  background-color: #ffb331;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Aggiunto un effetto di transizione */
+}
+/* Modifica delle dimensioni su dispositivi mobili */
+@media (max-width: 576px) {
+  .chatbotcontainer {
+    width: 45px;
+    height: 45px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+  
+
+.chatbotcontainer:hover {
+  background-color: #de9400; 
+}
+
+.chatbotlogo {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+@media (max-width: 576px) {
+  .chatbotlogo {
+    font-size: 20px;
+  }
+}
+.qna{
+  font-size: small;
+}
+
+/* Personalizzazione del colore della modal */
+.modal-content {
+  background-color: whitesmoke;
+}
+
+/* Personalizzazione del colore dell'header della modal */
+.modal-header {
+  background-color: #ffc258;
+  color: black;
+}
+
+.accordion-item .accordion-button.collapsed {
+  font-weight: bold;
+  background-color: white;
+  /* Arancione più scuro */
+}
+
+/* Personalizzazione del colore delle faq attive */
+.accordion-item .accordion-collapse {
+  background-color: white;
+  color: black;
+  /* Colore del testo nelle risposte */
+}
+.faqlink {
+text-decoration: none;
 }

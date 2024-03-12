@@ -4,8 +4,8 @@
     "description": "Pasticceria artigianale a Moncalieri",
     "start_url": "./index.html",
     "display": "standalone",
-    "background_color": "#fed4a7",
-    "theme_color": "#ffd494",
+    "background_color": "#ffd388",
+    "theme_color": "#ffd388",
     "icons": [
       {
         "src": "favicons/apple-touch-icon.png",
