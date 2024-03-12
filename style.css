@@ -320,3 +320,6 @@ h5 a:hover {
 .faqlink {
 text-decoration: none;
 }
+#additionalDesc {
+  font-style: italic;
+}

@@ -58,9 +58,3 @@
           previewModal.hide();
         });
       });
-
-  // Al momento, la nuvoletta non fa nulla quando viene cliccata
-  document.getElementById('chatBotContainer').addEventListener('click', function() {
-
-});
-
