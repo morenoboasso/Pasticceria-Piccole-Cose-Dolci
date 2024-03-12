@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://morenoboasso.github.io/Pasticceria-Piccole-Cose-Dolci/sitemap.xml
