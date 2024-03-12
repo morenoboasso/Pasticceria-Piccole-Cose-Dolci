@@ -2,6 +2,17 @@
 <html lang="it">
 
 <head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YH1EWYT1PV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-YH1EWYT1PV');
+  </script>
+
   <meta charset="UTF-8" />
   <link rel="manifest" href="manifest.json" />
 
@@ -19,8 +30,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <!-- Collega il tuo file CSS esterno -->
   <link rel="stylesheet" href="style.css">
-    <!-- indicizzabile -->
-    <meta name="robots" content="index, follow">
+  <!-- indicizzabile -->
+  <meta name="robots" content="index, follow">
   <style>
     body {
       margin: 0px;
@@ -78,7 +89,7 @@
     <div class="row" id="dolci">
       <!-- Prima riga -->
       <div class="col-lg-3 col-md-4 col-12 mb-4">
-      
+
         <div class="card shadow card-custom">
           <div class="custom-label personalizzabile-label shadow">
             <p class="label-text">PERSONALIZZABILE</p>
@@ -86,7 +97,8 @@
           <img src="assets/torte/tortacustom.png" class="card-img-top fixed-size-image" alt="Salatini immagine" />
           <div class="card-body">
             <h5 class="card-title card-text-custom">Torte per compleanni</h5>
-            <p class="card-text-descr-custom" style="margin-bottom: -1px;" style="margin-bottom: -1px;">Gusto: Lo scegli tu!</p>
+            <p class="card-text-descr-custom" style="margin-bottom: -1px;" style="margin-bottom: -1px;">Gusto: Lo scegli
+              tu!</p>
           </div>
         </div>
       </div>
@@ -96,11 +108,10 @@
           <div class="custom-label personalizzabile-label shadow">
             <p class="label-text">PERSONALIZZABILE</p>
           </div>
-          <img src="assets/torte/torteoccasioni.png" class="card-img-top fixed-size-image"
-            alt="Salatini immagine" />
+          <img src="assets/torte/torteoccasioni.png" class="card-img-top fixed-size-image" alt="Salatini immagine" />
           <div class="card-body">
             <h5 class="card-title card-text-custom">Torte personalizzabili</h5>
-            <p class="card-text-descr-custom" style="margin-bottom: -1px;">Gusto: Lo scegli tu!            </p>
+            <p class="card-text-descr-custom" style="margin-bottom: -1px;">Gusto: Lo scegli tu! </p>
           </div>
         </div>
       </div>
@@ -110,8 +121,7 @@
           <div class="custom-label personalizzabile-label shadow">
             <p class="label-text">PERSONALIZZABILE</p>
           </div>
-          <img src="assets/torte/numbercake.png" class="card-img-top fixed-size-image"
-            alt="Salatini immagine"/>
+          <img src="assets/torte/numbercake.png" class="card-img-top fixed-size-image" alt="Salatini immagine" />
           <div class="card-body">
             <h5 class="card-title card-text-custom">Number cake per compleanno</h5>
             <p class="card-text-descr-custom" style="margin-bottom: -1px;">Gusto: Lo scegli tu!
@@ -122,11 +132,11 @@
       <!-- Seconda riga -->
       <div class="col-lg-3 col-md-4 col-12 mb-4">
         <div class="card shadow card-custom">
-          <img src="assets/torte/tortaredvelvet.png" class="card-img-top fixed-size-image"
-            alt="Salatini immagine" />
+          <img src="assets/torte/tortaredvelvet.png" class="card-img-top fixed-size-image" alt="Salatini immagine" />
           <div class="card-body">
             <h5 class="card-title card-text-custom">Torta Red Velvet</h5>
-            <p class="card-text-descr-custom" style="margin-bottom: -1px;">Ingredienti: Farina, Zucchero, Uova, Cacao in Polvere, Vaniglia,Formaggio Cremoso, Zucchero a Velo
+            <p class="card-text-descr-custom" style="margin-bottom: -1px;">Ingredienti: Farina, Zucchero, Uova, Cacao in
+              Polvere, Vaniglia,Formaggio Cremoso, Zucchero a Velo
             </p>
           </div>
         </div>
@@ -146,15 +156,15 @@
         </div>
       </div>
 
-      
+
 
       <div class="col-lg-3 col-md-4 col-12 mb-4">
         <div class="card shadow card-custom">
-          <img src="assets/torte/profiterol.png" class="card-img-top fixed-size-image"
-            alt="Salatini immagine" />
+          <img src="assets/torte/profiterol.png" class="card-img-top fixed-size-image" alt="Salatini immagine" />
           <div class="card-body">
             <h5 class="card-title card-text-custom">Profiteroles</h5>
-            <p class="card-text-descr-custom" style="margin-bottom: -1px;">Ingredienti: Burro, Farina, Uova, Latte, Uova, Cioccolato fondente, Panna.
+            <p class="card-text-descr-custom" style="margin-bottom: -1px;">Ingredienti: Burro, Farina, Uova, Latte,
+              Uova, Cioccolato fondente, Panna.
             </p>
           </div>
         </div>
@@ -298,133 +308,142 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 
-<!-- INIZIO QNA -->
+  <!-- INIZIO QNA -->
 
-<div class="chatbotcontainer rounded-circle shadow" data-bs-toggle="modal" data-bs-target="#chatModal">
-  <i class="bi bi-chat-right-text chatbotlogo"></i>
-</div>
-
-<!-- Modal -->
-<div class="modal fade qna" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="chatModalLabel">Domande frequenti (FAQ):</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body" style="padding: 10px;">
-              <div class="accordion" id="faqAccordion">
-                  <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#faqCollapseOne" aria-expanded="false"
-                              aria-controls="faqCollapseOne">
-                              E' possibile Ordinare dal sito?
-                          </button>
-                      </h2>
-                      <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                          data-bs-parent="#faqAccordion">
-                          <div class="accordion-body">
-                              No, accettiamo ordini solo via telefono o whatsapp!<br> Negozio: <a href="tel:0116811171" class="faqlink">011-6811171</a><br> Whatsapp: <a class="faqlink" href="https://api.whatsapp.com/send?phone=393204681946">+39 320 4681946</a>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#faqCollapseTwo" aria-expanded="false"
-                              aria-controls="faqCollapseTwo">
-                              Avete prodotti per Celiaci?
-                          </button>
-                      </h2>
-                      <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                          data-bs-parent="#faqAccordion">
-                          <div class="accordion-body">
-                              Certo che sì! Li puoi vedere sul sito contraseggnati con la targhetta, oppure puoi
-                              scriverci per saperne di più.<br> Negozio: <a href="tel:0116811171" class="faqlink">011-6811171</a><br> Whatsapp: <a target="_blank" class="faqlink" href="https://api.whatsapp.com/send?phone=393204681946">+39 320 4681946</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#faqCollapseTree" aria-expanded="false"
-                              aria-controls="faqCollapseTree">
-                              Dove si trova la Pasticceria?
-                          </button>
-                      </h2>
-                      <div id="faqCollapseTree" class="accordion-collapse collapse" aria-labelledby="headingTree"
-                          data-bs-parent="#faqAccordion">
-                          <div class="accordion-body">
-                              Piccole cose dolci è situato in: <a target="_blank" class="faqlink" href="https://www.google.com/maps/dir//google+maps+piccole+cose+dolci/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47880d071b919c9b:0x6373cc837ebee747?sa=X&ved=1t:3061&ictx=111"> Via G. Boccardo 8, Moncalieri(TO)</a>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading4">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
-                              Avete prodotti Senza Lattosio?
-                          </button>
-                      </h2>
-                      <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
-                          data-bs-parent="#faqAccordion">
-                          <div class="accordion-body">
-                              Sì! Li puoi trovare sul sito contraseggnati con la targhetta, oppure puoi scriverci
-                              per saperne di più. <br> Negozio: <a href="tel:0116811171" class="faqlink">011-6811171</a><br> Whatsapp: <a target="_blank" class="faqlink" href="https://api.whatsapp.com/send?phone=393204681946">+39 320 4681946</a>
-                          
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading5">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
-                              Quali sono i vostri Orari?
-                          </button>
-                      </h2>
-                      <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
-                          data-bs-parent="#faqAccordion">
-                          <div class="accordion-body">
-                              Martedì:    08–12:30, 15:30–19<br>
-                              Mercoledì:  08–12:30, 15:30–19<br>
-                              Giovedì:    08–12:30, 15:30–19<br>
-                              Venerdì:    08–12:30, 15:30–19<br>
-                              Sabato:     08–12:30, 15:30–19<br>
-                              Domenica:   08:30–12:30<br>
-                              Lunedì:     Chiuso
-                          </div>
-                      </div>
-                  </div>
-                  <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading6">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
-                              Fate spedizioni?
-                          </button>
-                      </h2>
-                      <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
-                          data-bs-parent="#faqAccordion">
-                          <div class="accordion-body">
-                              Sì, effettuiamo consegne anche nei comuni limitrofi. Per informazioni: <br> Negozio: <a href="tel:0116811171" class="faqlink">011-6811171</a><br> Whatsapp: <a target="_blank" class="faqlink" href="https://api.whatsapp.com/send?phone=393204681946">+39 320 4681946</a>
-                          
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
-          </div>
-      </div>
+  <div class="chatbotcontainer rounded-circle shadow" data-bs-toggle="modal" data-bs-target="#chatModal">
+    <i class="bi bi-chat-right-text chatbotlogo"></i>
   </div>
-</div>
-<!-- fine QNA -->
+
+  <!-- Modal -->
+  <div class="modal fade qna" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="chatModalLabel">Domande frequenti (FAQ):</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="padding: 10px;">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+                  E' possibile Ordinare dal sito?
+                </button>
+              </h2>
+              <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  No, accettiamo ordini solo via telefono o whatsapp!<br> Negozio: <a href="tel:0116811171"
+                    class="faqlink">011-6811171</a><br> Whatsapp: <a class="faqlink"
+                    href="https://api.whatsapp.com/send?phone=393204681946">+39 320 4681946</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                  Avete prodotti per Celiaci?
+                </button>
+              </h2>
+              <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Certo che sì! Li puoi vedere sul sito contraseggnati con la targhetta, oppure puoi
+                  scriverci per saperne di più.<br> Negozio: <a href="tel:0116811171"
+                    class="faqlink">011-6811171</a><br> Whatsapp: <a target="_blank" class="faqlink"
+                    href="https://api.whatsapp.com/send?phone=393204681946">+39 320 4681946</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseTree" aria-expanded="false" aria-controls="faqCollapseTree">
+                  Dove si trova la Pasticceria?
+                </button>
+              </h2>
+              <div id="faqCollapseTree" class="accordion-collapse collapse" aria-labelledby="headingTree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Piccole cose dolci è situato in: <a target="_blank" class="faqlink"
+                    href="https://www.google.com/maps/dir//google+maps+piccole+cose+dolci/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47880d071b919c9b:0x6373cc837ebee747?sa=X&ved=1t:3061&ictx=111">
+                    Via G. Boccardo 8, Moncalieri(TO)</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                  Avete prodotti Senza Lattosio?
+                </button>
+              </h2>
+              <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Sì! Li puoi trovare sul sito contraseggnati con la targhetta, oppure puoi scriverci
+                  per saperne di più. <br> Negozio: <a href="tel:0116811171" class="faqlink">011-6811171</a><br>
+                  Whatsapp: <a target="_blank" class="faqlink"
+                    href="https://api.whatsapp.com/send?phone=393204681946">+39 320 4681946</a>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                  Quali sono i vostri Orari?
+                </button>
+              </h2>
+              <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Martedì: 08–12:30, 15:30–19<br>
+                  Mercoledì: 08–12:30, 15:30–19<br>
+                  Giovedì: 08–12:30, 15:30–19<br>
+                  Venerdì: 08–12:30, 15:30–19<br>
+                  Sabato: 08–12:30, 15:30–19<br>
+                  Domenica: 08:30–12:30<br>
+                  Lunedì: Chiuso
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                  Fate spedizioni?
+                </button>
+              </h2>
+              <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Sì, effettuiamo consegne anche nei comuni limitrofi. Per informazioni: <br> Negozio: <a
+                    href="tel:0116811171" class="faqlink">011-6811171</a><br> Whatsapp: <a target="_blank"
+                    class="faqlink" href="https://api.whatsapp.com/send?phone=393204681946">+39 320 4681946</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fine QNA -->
 
   <script src="script.js"></script>
+
+  
 
 </body>
 
