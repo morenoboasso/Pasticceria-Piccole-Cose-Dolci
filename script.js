@@ -27,6 +27,8 @@
         const previewImage = document.getElementById('previewImage');
         const previewTitle = document.getElementById('previewTitle');
         const previewDescription = document.getElementById('previewDescription');
+        const additionalDescription = document.getElementById('additionalDesc'); 
+
       
         const cardElements = document.querySelectorAll('.card-custom');
       
@@ -34,12 +36,15 @@
           const image = card.querySelector('img');
           const title = card.querySelector('.card-title');
           const description = card.querySelector('.card-text-descr-custom');
+          const additionalDesc = card.getAttribute('data-additional-description'); 
+
       
           card.addEventListener('click', function (event) {
             // Aggiorna i contenuti nella modal con quelli della card cliccata
             previewImage.src = image.src;
             previewTitle.textContent = title.textContent;
             previewDescription.textContent = description.textContent;
+            additionalDescription.textContent = additionalDesc; // Add this line
             // Apri il modal
             previewModal.show();
             
