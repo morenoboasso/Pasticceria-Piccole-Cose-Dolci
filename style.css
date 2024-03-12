@@ -2,13 +2,6 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.cookie-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px -3px 6px rgba(0, 0, 0, .1)
-}
-
 h5 a {
   text-decoration: none;
   color: black;
