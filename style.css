@@ -247,12 +247,12 @@ h5 a:hover {
 /* QNA */
 .chatbotcontainer {
   position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 15px;
+  width: 65px;
+  height: 65px;
+  bottom: 15px; 
   right: 25px;
   cursor: pointer;
-  background-color: #ffb331;
+  background-color: #fe940099;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,26 +263,24 @@ h5 a:hover {
   .chatbotcontainer {
     width: 45px;
     height: 45px;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 15px;
   }
 }
-  
 
-.chatbotcontainer:hover {
-  background-color: #de9400; 
+.chatbotcontainer:hover{
+  background-color: #fcb232d8;
 }
 
 .chatbotlogo {
-  color: black;
-  font-weight: bold;
-  font-size: 25px;
+  width: 55px; 
 }
 @media (max-width: 576px) {
-  .chatbotlogo {
-    font-size: 20px;
+  .chatbotlogo{
+    width: 35px; 
   }
 }
+
 .qna{
   font-size: small;
 }
