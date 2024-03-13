@@ -83,3 +83,39 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
+
+//TODO: TESTARE SE FUNZIONA IL SHARE SU ANDROID
+
+// Ottieni tutti gli elementi img all'interno di previewContent
+const previewImages = document.querySelectorAll('#previewContent img');
+
+// Aggiungi un evento di lungo tocco a ciascuna immagine nella modalità di anteprima
+previewImages.forEach((image) => {
+    image.addEventListener('touchstart', handleLongPress, false);
+    image.addEventListener('mousedown', handleLongPress, false);
+});
+
+// Funzione per gestire il lungo tocco sull'immagine
+function handleLongPress(event) {
+    event.preventDefault(); // Evita il comportamento predefinito del lungo tocco
+
+    // Prepara i dati da condividere
+    const shareData = {
+        title: 'Prodotto piccole cose dolci',
+        text: 'Guarda questo incredibile prodotto della Pasticceria Piccole Cose Dolci di Moncalieri!',
+        url: event.target.src
+    };
+
+    // Controlla se l'API Web Share è supportata dal browser
+    if (navigator.share) {
+        // Mostra il menu di condivisione del dispositivo
+        navigator.share(shareData)
+            .then(() => console.log('Contenuto condiviso con successo'))
+            .catch((error) => console.error('Errore durante la condivisione:', error));
+    } else {
+        // Se l'API Web Share non è supportata, offri un'alternativa (ad esempio, mostra un prompt con le istruzioni per condividere manualmente)
+        const sharePrompt = `Per condividere questa immagine, premi il pulsante Condividi e seleziona l'opzione Condividi immagine.`;
+        alert(sharePrompt);
+    }
+}
+
