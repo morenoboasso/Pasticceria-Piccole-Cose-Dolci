@@ -96,7 +96,7 @@ h5 a:hover {
 }
 
 .card-text-descr-custom {
-  font-size: 12px;
+  font-size: 13px;
   color: rgb(151, 151, 151);
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -184,11 +184,11 @@ h5 a:hover {
 
 @media (max-width:576px) {
   .card-text-custom {
-    font-size: 12px
+    font-size: 13px
   }
 
   .text-secondary-custom {
-    font-size: 12px
+    font-size: 13px
   }
 
   .text-primary-custom {
@@ -319,7 +319,7 @@ h5 a:hover {
 }
 
 .lattosio img {
-  width: 30px;
+  width: 40px;
   cursor: pointer;
 
 }
