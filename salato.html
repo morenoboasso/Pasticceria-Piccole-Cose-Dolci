@@ -246,11 +246,14 @@
   </div>
 
   <!-- Footer -->
-  <footer class="appbar-custom py-3 container-fluid">
+  <footer class="appbar-custom pt-3 container-fluid">
     <div class="row text-center d-flex">
       <!-- Logo -->
       <div class="col-sm-4 mb-3">
-        <img src="assets/logo.jpeg" class="rounded-circle shadow-sm" style="width: 60%" alt="Logo" />
+        <img src="assets/logo.jpeg" class="rounded-circle" style="width: 60%" alt="Logo" />
+        <p style="font-style: italic;font-size: 12px;" class="text-secondary-custom py-1">Le foto dei prodotti sono
+          di proprietà <br>
+          PICCOLE COSE DOLCI SNC</p>
       </div>
       <!-- Posizione -->
       <div class="col-sm-4 mb-3">
@@ -261,7 +264,6 @@
             width="100%" height="100%" referrerpolicy="no-referrer-when-downgrade" title="Moncalieri"></iframe>
         </div>
       </div>
-
       <!-- Contatti -->
       <div class="col-sm-4 align-top justify-content-center">
         <div>
@@ -277,11 +279,16 @@
           <a href="tel:+390116811171" aria-label="Telefono"><i class="bi bi-telephone px-2 contacts-custom"
               style="font-size: 2em;"></i></a>
         </div>
-
       </div>
+      <br>
 
-
-    </div>
+      <!-- "Sito realizzato da Moreno Boasso" -->
+      <div class="row">
+        <div class="col-sm-12 align-center">
+          <p style="font-size: 12px;">Sito realizzato da <a href="https://www.linkedin.com/in/morenoboasso"
+              target="_blank" style="color: #000;"> Moreno Boasso</a></p>
+        </div>
+      </div>
   </footer>
 
   <!-- Modal Preview -->
@@ -293,7 +300,7 @@
             <img src="" class="img-fluid rounded fixed-size-image-modal custom-larger-image" id="previewImage"
               alt="Preview Image">
             <h5 id="previewTitle" class="mt-3 mx-1 text-left text-primary-custom"></h5>
-            <p id="previewDescription" class="mx-1 mb-1 text-secondary-custom"></p>
+            <h6 id="previewDescription" class="mx-1 mb-1 text-secondary-custom"></h6>
             <br>
             <p id="additionalDesc" class="mx-1 mb-1 text-secondary-custom"></p>
           </div>
@@ -302,10 +309,6 @@
     </div>
   </div>
 
-
-  <!-- Bootstrap JavaScript e Popper.js (assicurati di includerli prima della chiusura del body) -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 
   <!-- INIZIO QNA -->
 
@@ -350,7 +353,7 @@
               <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  Certo che sì! Li puoi vedere sul sito contraseggnati con la targhetta, oppure puoi
+                  Certo che sì! Li puoi vedere sul sito con la targhetta, oppure puoi
                   scriverci per saperne di più.<br> Negozio: <a href="tel:0116811171"
                     class="faqlink">011-6811171</a><br> Whatsapp: <a target="_blank" class="faqlink"
                     href="https://api.whatsapp.com/send?phone=393204681946">+39 320 4681946</a>
@@ -384,7 +387,7 @@
               <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
                 data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  Sì! Li puoi trovare sul sito contraseggnati con la targhetta, oppure puoi scriverci
+                  Sì! Li puoi trovare contraseggnati con la targhetta, oppure puoi scriverci
                   per saperne di più. <br> Negozio: <a href="tel:0116811171" class="faqlink">011-6811171</a><br>
                   Whatsapp: <a target="_blank" class="faqlink"
                     href="https://api.whatsapp.com/send?phone=393204681946">+39 320 4681946</a>
@@ -438,7 +441,6 @@
       </div>
     </div>
   </div>
-  <!-- fine QNA -->
 
   <!-- MODAL LEGENDA  -->
   <div id="lactose-modal" class="lactose-modal modal">
@@ -463,9 +465,11 @@
     </div>
   </div>
 
+
+  <!-- Bootstrap JavaScript e Popper.js (assicurati di includerli prima della chiusura del body) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
-
-
 
 
 </body>
