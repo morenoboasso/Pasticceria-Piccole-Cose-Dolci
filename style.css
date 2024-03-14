@@ -250,6 +250,9 @@ h5 a:hover {
   /* Aggiunto un effetto di transizione */
 }
 
+.chatbotlogo {
+  width: 55px;
+}
 /* Modifica delle dimensioni su dispositivi mobili */
 @media (max-width: 576px) {
   .chatbotcontainer {
@@ -258,22 +261,14 @@ h5 a:hover {
     bottom: 20px;
     right: 15px;
   }
-}
-
-.chatbotcontainer:hover {
-  background-color: #fcb232d8;
-}
-
-.chatbotlogo {
-  width: 55px;
-}
-
-@media (max-width: 576px) {
   .chatbotlogo {
     width: 35px;
   }
 }
 
+.chatbotcontainer:hover {
+  background-color: #fcb232d8;
+}
 .qna {
   font-size: small;
 }
