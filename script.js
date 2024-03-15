@@ -1,1 +1,154 @@
-function navigateToSection(){const e=document.getElementById("inputGroupSelect01").value;if(""!==e){const t=document.getElementById(e);t&&t.scrollIntoView({behavior:"smooth"})}}function compressImage(e,t,n,o){return new Promise((c,i)=>{let r=new FileReader;r.readAsDataURL(e),r.onload=function(r){let d=new Image;d.src=r.target.result,d.onload=function(){let i=document.createElement("canvas"),r=i.getContext("2d"),a=d.width,l=d.height;a>l?a>t&&(l*=t/a,a=t):l>n&&(a*=n/l,l=n),i.width=a,i.height=l,r.drawImage(d,0,0,a,l),i.toBlob(e=>c(e),e.type,o)},d.onerror=function(e){i(e)}}})}document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".navbar-nav a.nav-link").forEach(function(e){e.addEventListener("click",function(e){e.preventDefault(),window.location.href=this.getAttribute("href")})})}),document.addEventListener("DOMContentLoaded",function(){const e=new bootstrap.Modal(document.getElementById("previewModal")),t=(document.getElementById("previewContent"),document.getElementById("previewImage")),n=document.getElementById("previewTitle"),o=document.getElementById("previewDescription"),c=document.getElementById("additionalDesc");document.querySelectorAll(".card-custom").forEach((i,r)=>{const d=i.querySelector("img"),a=i.querySelector(".card-title"),l=i.querySelector(".card-text-descr-custom"),s=i.getAttribute("data-additional-description");i.addEventListener("click",function(i){t.src=d.src,n.textContent=a.textContent,o.textContent=l.textContent,c.textContent=s,e.show(),i.stopPropagation()})}),document.addEventListener("click",function(){e.hide()})}),document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("lactose-lactose-free"),t=document.getElementById("lactose-modal");e.onclick=function(e){e.stopPropagation(),t.style.display="block"};var n=document.querySelector(".lactose-close");n&&(n.onclick=function(){t.style.display="none"}),window.onclick=function(e){e.target==t&&(t.style.display="none")}}),document.addEventListener("DOMContentLoaded",function(){var e=[].slice.call(document.querySelectorAll("img.lazy"));if("IntersectionObserver"in window){let t=new IntersectionObserver(function(e,n){e.forEach(function(e){if(e.isIntersecting){let n=e.target;n.src=n.dataset.src,n.classList.remove("lazy"),t.unobserve(n)}})});e.forEach(function(e){t.observe(e)})}else e.forEach(function(e){e.src=e.dataset.src,e.classList.remove("lazy")})});
+document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll(".navbar-nav a.nav-link");
+  links.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = this.getAttribute("href");
+    });
+  });
+});
+
+
+function navigateToSection() {
+  const selectElement = document.getElementById("inputGroupSelect01");
+  const selectedValue = selectElement.value;
+
+  if (selectedValue !== "") {
+    const section = document.getElementById(selectedValue);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const previewModal = new bootstrap.Modal(document.getElementById('previewModal'));
+  const previewContent = document.getElementById('previewContent');
+  const previewImage = document.getElementById('previewImage');
+  const previewTitle = document.getElementById('previewTitle');
+  const previewDescription = document.getElementById('previewDescription');
+  const additionalDescription = document.getElementById('additionalDesc');
+
+
+  const cardElements = document.querySelectorAll('.card-custom');
+
+  cardElements.forEach((card, index) => {
+    const image = card.querySelector('img');
+    const title = card.querySelector('.card-title');
+    const description = card.querySelector('.card-text-descr-custom');
+    const additionalDesc = card.getAttribute('data-additional-description');
+
+
+    card.addEventListener('click', function (event) {
+      // Aggiorna i contenuti nella modal con quelli della card cliccata
+      previewImage.src = image.src;
+      previewTitle.textContent = title.textContent;
+      previewDescription.textContent = description.textContent;
+      additionalDescription.textContent = additionalDesc; // Add this line
+      // Apri il modal
+      previewModal.show();
+
+      // Impedisci la propagazione dell'evento click per evitare la chiusura immediata
+      event.stopPropagation();
+    });
+  });
+
+  // Aggiungi un event listener al documento per chiudere la modal quando si fa clic al di fuori di essa
+  document.addEventListener('click', function () {
+    previewModal.hide();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Ottieni l'elemento dell'immagine Senza Lattosio
+  var lactoseFreeImg = document.getElementById("lactose-lactose-free");
+
+  // Ottieni l'elemento della modalità di legenda
+  var modal = document.getElementById("lactose-modal");
+
+  // Quando l'utente clicca sull'immagine Senza Lattosio, mostra solo la modalità di legenda
+  lactoseFreeImg.onclick = function (event) {
+    event.stopPropagation(); // Impedisci la propagazione dell'evento clic per evitare che venga gestito dall'elemento superiore
+    modal.style.display = "block";
+  }
+
+  // Assicurati che l'elemento con la classe "lactose-close" esista prima di tentare di assegnare l'evento onclick
+  var closeBtn = document.querySelector(".lactose-close");
+  if (closeBtn) {
+    // Quando l'utente clicca sul pulsante di chiusura, nascondi la modalità di legenda
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+  }
+
+  // Quando l'utente clicca al di fuori della modalità di legenda, chiudila
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+});
+
+// Lazy loading delle immagini
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  
+    if ("IntersectionObserver" in window) {
+        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    let lazyImage = entry.target;
+                    lazyImage.src = lazyImage.dataset.src;
+                    lazyImage.classList.remove("lazy");
+                    lazyImageObserver.unobserve(lazyImage);
+                }
+            });
+        });
+  
+        lazyImages.forEach(function(lazyImage) {
+            lazyImageObserver.observe(lazyImage);
+        });
+    } else {
+        // Fallback per i browser che non supportano IntersectionObserver
+        lazyImages.forEach(function(lazyImage) {
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.classList.remove("lazy");
+        });
+    }
+});
+
+// Comprimi le immagini prima del caricamento
+function compressImage(file, maxWidth, maxHeight, quality) {
+    return new Promise((resolve, reject) => {
+        let reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function(event) {
+            let img = new Image();
+            img.src = event.target.result;
+            img.onload = function() {
+                let canvas = document.createElement("canvas");
+                let ctx = canvas.getContext("2d");
+                let width = img.width;
+                let height = img.height;
+                if (width > height) {
+                    if (width > maxWidth) {
+                        height *= maxWidth / width;
+                        width = maxWidth;
+                    } 
+                } else {
+                    if (height > maxHeight) {
+                        width *= maxHeight / height;
+                        height = maxHeight;
+                    }
+                }
+                canvas.width = width;
+                canvas.height = height;
+                ctx.drawImage(img, 0, 0, width, height);
+                canvas.toBlob(blob => resolve(blob), file.type, quality);
+            };
+            img.onerror = function(error) {
+                reject(error);
+            };
+        };
+    });
+}

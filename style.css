@@ -131,10 +131,9 @@ h5 a:hover {
 }
 
 .sticky-input {
-  position: sticky; 
-  text-align: center;
-  top: 60px;
-  z-index: 200; 
+  position:sticky; 
+  top: 55px;
+  z-index: 3;
   background-color: #fff
 }
 
