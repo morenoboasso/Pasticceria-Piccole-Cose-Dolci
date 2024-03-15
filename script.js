@@ -67,19 +67,20 @@ document.addEventListener('DOMContentLoaded', function () {
   var modal = document.getElementById("lactose-modal");
 
   // Quando l'utente clicca sull'immagine Senza Lattosio, mostra solo la modalità di legenda
-  lactoseFreeImg.onclick = function (event) {
+  lactoseFreeImg.addEventListener('click', function (event) {
     event.stopPropagation(); // Impedisci la propagazione dell'evento clic per evitare che venga gestito dall'elemento superiore
     modal.style.display = "block";
-  }
+  }); 
+
 
   // Assicurati che l'elemento con la classe "lactose-close" esista prima di tentare di assegnare l'evento onclick
   var closeBtn = document.querySelector(".lactose-close");
   if (closeBtn) {
     // Quando l'utente clicca sul pulsante di chiusura, nascondi la modalità di legenda
-    closeBtn.onclick = function () {
+    closeBtn.addEventListener('click', function (){
       modal.style.display = "none";
     }
-  }
+)}
 
   // Quando l'utente clicca al di fuori della modalità di legenda, chiudila
   window.onclick = function (event) {
