@@ -1,6 +1,6 @@
 {
   "name": "Pasticceria Piccole Cose Dolci",
-  "short_name": "PasticceriaPiccole Cose Dolci",
+  "short_name": "Piccole Cose Dolci",
   "icons": [
     {
       "src": "favicons/android-chrome-192x192.png",
@@ -26,6 +26,5 @@
   "orientation": "any",
   "categories": [
     "food"
-  ],
-  "maskable": true
+  ]
 }
