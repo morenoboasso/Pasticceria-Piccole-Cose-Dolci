@@ -129,6 +129,11 @@ h5 a:hover {
 .speciali {
   text-align: center
 }
+@media (max-width:576px) {
+  .speciali {
+    font-size: 20px;
+  }
+}
 
 .sticky-input {
   position:sticky; 
