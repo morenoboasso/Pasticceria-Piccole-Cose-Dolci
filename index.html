@@ -32,6 +32,17 @@
   <meta name="robots" content="index, follow">
   <!-- Cache -->
   <link rel="stylesheet" href="style.css?v=2">
+  <!-- Preconnect per CDN di Popper.js -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- DNS prefetch per CDN di Popper.js -->
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+  <!-- Preconnect per CDN di Bootstrap -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- DNS prefetch per CDN di Bootstrap -->
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
   <style>
 
   </style>
@@ -44,7 +55,7 @@
     <div>
       <a href="index.html">
         <img class="shadow" src="assets/Logo.webp" alt="Logo Pasticceria"
-          style="border-radius: 15%; height: 40px; width: 70px;" />
+          style="border-radius: 15%; width: 70px;" />
       </a>
     </div>
     <button class="navbar-toggler shadow-sm collapse-custom" type="button" data-bs-toggle="collapse"
@@ -122,7 +133,7 @@
       <div class="col-lg-3 col-md-4 col-6 mb-4">
         <div class="card shadow card-custom"
           data-additional-description="Curiosità: Il babà, con la sua forma unica, è talvolta chiamato 'il re delle paste dolci' per la sua popolarità e versatilità in diverse cucine.">
-          <img src="assets/dolci/baba.webp" class="card-img-top fixed-size-image" alt="babà" />
+          <img src="assets/dolci/baba.webp" class="card-img-top fixed-size-image" alt="babà" loading="lazy">
           <div class="card-body">
             <h5 class="card-title card-text-custom"><strong>Babà</strong></h5>
             <p class="card-text-descr-custom" style="margin-bottom: -1px;">Ingredienti: Rum, Farina, Zucchero, Lievito
