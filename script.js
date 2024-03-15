@@ -59,27 +59,32 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Ottieni l'elemento dell'immagine Senza Lattosio
-var lactoseFreeImg = document.getElementById("lactose-lactose-free");
+document.addEventListener('DOMContentLoaded', function () {
+  // Ottieni l'elemento dell'immagine Senza Lattosio
+  var lactoseFreeImg = document.getElementById("lactose-lactose-free");
 
-// Ottieni l'elemento della modalità di legenda
-var modal = document.getElementById("lactose-modal");
+  // Ottieni l'elemento della modalità di legenda
+  var modal = document.getElementById("lactose-modal");
 
-// Quando l'utente clicca sull'immagine Senza Lattosio, mostra solo la modalità di legenda
-lactoseFreeImg.onclick = function (event) {
-  event.stopPropagation(); // Impedisci la propagazione dell'evento clic per evitare che venga gestito dall'elemento superiore
-  modal.style.display = "block";
-}
-
-// Quando l'utente clicca sul pulsante di chiusura, nascondi la modalità di legenda
-var closeBtn = document.getElementsByClassName("lactose-close")[0];
-closeBtn.onclick = function () {
-  modal.style.display = "none";
-}
-
-// Quando l'utente clicca al di fuori della modalità di legenda, chiudila
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  // Quando l'utente clicca sull'immagine Senza Lattosio, mostra solo la modalità di legenda
+  lactoseFreeImg.onclick = function (event) {
+    event.stopPropagation(); // Impedisci la propagazione dell'evento clic per evitare che venga gestito dall'elemento superiore
+    modal.style.display = "block";
   }
-}
+
+  // Assicurati che l'elemento con la classe "lactose-close" esista prima di tentare di assegnare l'evento onclick
+  var closeBtn = document.querySelector(".lactose-close");
+  if (closeBtn) {
+    // Quando l'utente clicca sul pulsante di chiusura, nascondi la modalità di legenda
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+  }
+
+  // Quando l'utente clicca al di fuori della modalità di legenda, chiudila
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+});

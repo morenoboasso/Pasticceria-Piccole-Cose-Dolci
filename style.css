@@ -358,12 +358,12 @@ h5 a:hover {
 .lactose-legend-item {
   display: flex;
   align-items: center;
-  padding: 10px; 
+  padding: 10px;  
 }
 
 .lactose-legend-item img {
-  width: 40px;
-  margin-right: 50px; 
+  width: 40px; 
+  margin-right: 30px; 
 } 
 
 .lactose-legend-item p {
