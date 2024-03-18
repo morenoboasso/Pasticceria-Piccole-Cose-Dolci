@@ -42,7 +42,7 @@ h5 a:hover {
 
 .appbar-custom {
   background: #ffd388;
-  z-index: 10;
+  z-index: 101;
 }
 
 .navbar-nav li.dropdown:hover .nav-link,
@@ -138,7 +138,7 @@ h5 a:hover {
 .sticky-input {
   position:sticky; 
   top: 55px;
-  z-index: 3;
+  z-index: 100;
   background-color: #fff
 }
 
