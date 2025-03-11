@@ -4,7 +4,7 @@ This is the website i made for the bakery "Piccole cose dolci" located in Italy.
 
 ## Demo
 
-https://pasticceria-piccole-cose-dolci.it/
+https://piccole-cose-dolci.it/
 
 ## Author
 
