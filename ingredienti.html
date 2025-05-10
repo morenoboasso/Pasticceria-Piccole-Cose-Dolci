@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Elenco Ingredienti</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(255, 255, 255);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #7a3e2f;
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #7a3e2f;
+      font-size: 2em;
+      border-bottom: 2px solid #ffd388;
+      padding-bottom: 5px;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    .categoria h2 {
+      font-size: 1.6em;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+
+    .prodotto {
+      background-color: #ffeac5d1;
+      border: 1px solid #ffd388;
+      border-left: 5px solid #ffd388;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .prodotto h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #5d2a1c;
+      font-size: 1.3em;
+    }
+
+    .ingredienti, .allergeni {
+      margin-top: 6px;
+      font-size: 0.95em;
+      line-height: 1.4;
+    }
+
+    .ingredienti strong, .allergeni strong {
+      color: #aa4b2a;
+    }
+
+    ol {
+      max-width: 500px;
+      margin: 20px auto;
+      padding-left: 20px;
+      font-size: 20px;
+      column-count: 2;
+      column-gap: 40px;
+    }
+
+    ol li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Elenco Ingredienti e Allergeni</h1>
+
+    <h2><center>Legenda Allergeni</center></h2>
+    <ol>
+      <li>Glutine</li>
+      <li>Crostacei</li>
+      <li>Uova</li>
+      <li>Pesce</li>
+      <li>Arachidi</li>
+      <li>Soia</li>
+      <li>Latte</li>
+      <li>Frutta a guscio</li>
+      <li>Sedano</li>
+      <li>Senape</li>
+      <li>Semi di sesamo</li>
+      <li>Anidride solforosa e solfiti</li>
+      <li>Lupini</li>
+      <li>Molluschi</li>
+    </ol>
+
+    <div class="categoria">
+      <h2>Pasticceria Fresca</h2>
+
+      <div class="prodotto">
+        <h3>Semifreddo al pistacchio</h3>
+        <div class="ingredienti">
+          <strong>Ingredienti:</strong> panna, latte, tuorlo d'uovo, zucchero, vaniglia, pasta di pistacchio, colla di pesce
+        </div>
+        <div class="allergeni">
+          <strong>Allergeni:</strong> 3 7 8
+        </div>
+      </div>
+    </div>
+
+    <div class="categoria">
+      <h2>Pasticceria Salata</h2>
+
+      <div class="prodotto">
+        <h3>Bignole (gusci)</h3>
+        <div class="ingredienti">
+          <strong>Ingredienti:</strong> acqua, burro, sale, farina 00, uova
+        </div>
+        <div class="allergeni">
+          <strong>Allergeni:</strong> 1 3 7
+        </div>
+      </div>
+    </div>
+
+    <div class="categoria">
+      <h2>Pasticceria Secca</h2>
+
+      <div class="prodotto">
+        <h3>Bignole (gusci)</h3>
+        <div class="ingredienti">
+          <strong>Ingredienti:</strong> acqua, burro, sale, farina 00, uova
+        </div>
+        <div class="allergeni">
+          <strong>Allergeni:</strong> 1 3 7
+        </div>
+      </div>
+    </div>
+
+    <div class="categoria">
+      <h2>Torte</h2>
+
+      <div class="prodotto">
+        <h3>Babà</h3>
+        <div class="ingredienti">
+          <strong>Ingredienti:</strong> uova, farina 00, zucchero, lievito di birra, burro
+        </div>
+        <div class="allergeni">
+          <strong>Allergeni:</strong> 1 3 7
+        </div>
+      </div>
+    </div>
+
+    <div class="categoria">
+      <h2>Monoporzioni</h2>
+
+      <div class="prodotto">
+        <h3>Bignole (gusci)</h3>
+        <div class="ingredienti">
+          <strong>Ingredienti:</strong> acqua, burro, sale, farina 00, uova
+        </div>
+        <div class="allergeni">
+          <strong>Allergeni:</strong> 1 3 7
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
