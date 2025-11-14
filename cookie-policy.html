@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cookie Policy - Piccole Cose Dolci</title>
+  <meta name="description" content="Informativa sui cookie per il sito Piccole Cose Dolci." />
+  <link rel="canonical" href="https://piccole-cose-dolci.it/cookie-policy.html">
+  <meta property="og:image" content="https://piccole-cose-dolci.it/assets/Logo.webp" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container py-5">
+    <h1>Cookie Policy</h1>
+    <p>Questa pagina descrive l'uso dei cookie sul sito di Piccole Cose Dolci.</p>
+
+    <h2>Cosa sono i cookie</h2>
+    <p>I cookie sono piccoli file di testo che i siti visitati inviano al tuo dispositivo, dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla visita successiva.</p>
+
+    <h2>Tipologie di cookie utilizzati</h2>
+    <ul>
+      <li><strong>Cookie tecnici</strong>: necessari al corretto funzionamento del sito.</li>
+      <li><strong>Cookie di misurazione</strong>: utilizzati per statistiche aggregate e anonime.</li>
+      <li><strong>Cookie per la pubblicità</strong>: utilizzati da Google AdSense per mostrare annunci; sono attivati solo con il tuo consenso.</li>
+    </ul>
+
+    <h2>Gestione delle preferenze</h2>
+    <p>Puoi modificare in qualsiasi momento la tua scelta relativa ai cookie.</p>
+    <button id="update-consent" class="btn btn-dark">Aggiorna preferenze cookie</button>
+
+    <h2>Terze parti</h2>
+    <p>Per maggiori informazioni sui cookie di Google, visita le relative informative fornite da Google.</p>
+
+    <h2>Contatti</h2>
+    <p>Per domande su questa Cookie Policy: <a href="mailto:mirmoccnt@gmail.com">mirmoccnt@gmail.com</a></p>
+  </div>
+
+  <script>
+    document.getElementById('update-consent').addEventListener('click', function () {
+      try {
+        localStorage.removeItem('pasticceria_consent');
+        window.location.reload();
+      } catch (e) { window.location.reload(); }
+    });
+  </script>
+</body>
+</html>

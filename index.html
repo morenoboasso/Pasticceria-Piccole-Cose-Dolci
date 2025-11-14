@@ -7,6 +7,14 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'functionality_storage': 'denied',
+      'security_storage': 'granted'
+    });
     gtag('js', new Date());
 
     gtag('config', 'G-6PB9ZWGKF1');
@@ -17,8 +25,8 @@
     content="La Pasticceria Artigianale Piccole Cose Dolci a Moncalieri, Torino, offre una selezione unica di dolci artigianali deliziosi. Scopri i nostri prodotti!">
   <meta charset="UTF-8" />
   <meta name="google-adsense-account" content="ca-pub-1554355070671367">
-  <meta property="og:image" content="https://www.pasticceria-piccole-cose-dolci.it/assets/torte/TorteMatrimonio.webp" />
-  <link rel="canonical" href="https://pasticceria-piccole-cose-dolci.it/">
+  <meta property="og:image" content="https://piccole-cose-dolci.it/assets/torte/TorteMatrimonio.webp" />
+  <link rel="canonical" href="https://piccole-cose-dolci.it/">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -29,6 +37,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pasticcini - Pasticceria Moncalieri Torino - Piccole Cose Dolci
   </title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Piccole Cose Dolci",
+    "image": "https://piccole-cose-dolci.it/assets/Logo.webp",
+    "url": "https://piccole-cose-dolci.it/",
+    "telephone": "+39 011 6811171",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via G. Boccardo 8",
+      "addressLocality": "Moncalieri",
+      "postalCode": "10024",
+      "addressCountry": "IT",
+      "addressRegion": "TO"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.995614,
+      "longitude": 7.710157
+    },
+    "openingHours": [
+      "Tu-Fr 08:00-12:30,15:30-19:00",
+      "Sa 08:00-12:30,15:30-19:00",
+      "Su 08:30-12:30"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/pasticceriapiccolecosedolci/",
+      "https://www.instagram.com/piccolecosedolci"
+    ]
+  }
+  </script>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -751,6 +791,13 @@
           <p style="font-size: 12px;">P.IVA: 07494730018</p>
         </div>
       </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-12 text-center" style="font-size: 12px;">
+          <a href="privacy_policy.html" style="color:#000; margin: 0 8px;">Privacy Policy</a> |
+          <a href="cookie-policy.html" style="color:#000; margin: 0 8px;">Cookie Policy</a> |
+          <a href="contatti.html" style="color:#000; margin: 0 8px;">Contatti</a>
+        </div>
+      </div>
     </div>
   </footer>
 
@@ -933,6 +980,29 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "E' possibile ordinare dal sito?",
+        "acceptedAnswer": {"@type": "Answer", "text": "No, accettiamo ordini solo via telefono o WhatsApp. Negozio: 011-6811171, WhatsApp: +39 320 4681946."}
+      },
+      {
+        "@type": "Question",
+        "name": "Offrite prodotti adatti a persone con intolleranza al glutine?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Sì, alcuni prodotti sono disponibili senza glutine su richiesta. Contattaci per maggiori informazioni."}
+      },
+      {
+        "@type": "Question",
+        "name": "Quali sono i vostri orari?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Mar-Sab: 08–12:30, 15:30–19. Dom: 08:30–12:30. Lun: chiuso."}
+      }
+    ]
+  }
+  </script>
 </body>
 
 </html>

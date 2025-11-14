@@ -7,6 +7,14 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'functionality_storage': 'denied',
+      'security_storage': 'granted'
+    });
     gtag('js', new Date());
 
     gtag('config', 'G-6PB9ZWGKF1');
@@ -17,6 +25,8 @@
     content="La Pasticceria Artigianale Piccole Cose Dolci a Moncalieri(Torino) offre una selezione unica di Salatini artigianali deliziosi. Scopri i nostri prodotti!">
     <meta name="google-adsense-account" content="ca-pub-1554355070671367">
   <meta charset="UTF-8" />
+  <meta property="og:image" content="https://piccole-cose-dolci.it/assets/Logo.webp" />
+  <link rel="canonical" href="https://piccole-cose-dolci.it/salato.html">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -348,17 +358,23 @@
               style="color: #000;">Moreno Boasso</a></p>
         </div>
 
+      <div class="row justify-content-center">
         <div class="col-sm-12 text-center">
           <p style="font-size: 12px;">P.IVA: 07494730018</p>
         </div>
+        <div class="col-sm-12 text-center" style="font-size: 12px;">
+          <a href="privacy_policy.html" style="color:#000; margin: 0 8px;">Privacy Policy</a> |
+          <a href="cookie-policy.html" style="color:#000; margin: 0 8px;">Cookie Policy</a> |
+          <a href="contatti.html" style="color:#000; margin: 0 8px;">Contatti</a>
+        </div>
       </div>
     </div>
+  </div>
   </footer>
 
   <!-- Modal Preview -->
   <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
     <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content shadow-lg">
         <div class="modal-body">
           <div id="previewContent">
             <img src="" class="img-fluid rounded fixed-size-image-modal custom-larger-image" id="previewImage"

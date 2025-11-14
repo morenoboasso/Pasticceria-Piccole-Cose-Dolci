@@ -59,6 +59,76 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Simple Cookie Banner with Consent Mode v2
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    var stored = localStorage.getItem('pasticceria_consent');
+    if (!stored) {
+      var banner = document.createElement('div');
+      banner.setAttribute('role', 'dialog');
+      banner.setAttribute('aria-live', 'polite');
+      banner.style.position = 'fixed';
+      banner.style.bottom = '0';
+      banner.style.left = '0';
+      banner.style.right = '0';
+      banner.style.zIndex = '9999';
+      banner.style.background = '#ffd388';
+      banner.style.color = '#000';
+      banner.style.boxShadow = '0 -2px 8px rgba(0,0,0,0.15)';
+      banner.style.padding = '12px 16px';
+
+      banner.innerHTML = '<div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;justify-content:center">'
+        + '<span style="font-size:14px;">Usiamo cookie per funzionalità, statistiche e annunci nel rispetto della tua privacy. </span>'
+        + '<a href="cookie-policy.html" style="color:#000;text-decoration:underline;font-size:14px;">Scopri di più</a>'
+        + '<div style="display:flex;gap:8px;">'
+        +   '<button id="cookie-reject" class="btn btn-outline-dark btn-sm">Rifiuta</button>'
+        +   '<button id="cookie-accept" class="btn btn-dark btn-sm">Accetta</button>'
+        + '</div>'
+        + '</div>';
+
+      document.body.appendChild(banner);
+
+      function updateConsent(granted) {
+        try {
+          if (typeof gtag === 'function') {
+            gtag('consent', 'update', {
+              'ad_storage': granted ? 'granted' : 'denied',
+              'analytics_storage': granted ? 'granted' : 'denied',
+              'ad_user_data': granted ? 'granted' : 'denied',
+              'ad_personalization': granted ? 'granted' : 'denied',
+              'functionality_storage': granted ? 'granted' : 'denied'
+            });
+          }
+        } catch (e) {}
+      }
+
+      document.getElementById('cookie-accept').addEventListener('click', function () {
+        localStorage.setItem('pasticceria_consent', 'granted');
+        updateConsent(true);
+        banner.remove();
+      });
+      document.getElementById('cookie-reject').addEventListener('click', function () {
+        localStorage.setItem('pasticceria_consent', 'denied');
+        updateConsent(false);
+        banner.remove();
+      });
+    } else {
+      // Restore consent state on subsequent page views
+      if (stored === 'granted') {
+        if (typeof gtag === 'function') {
+          gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'analytics_storage': 'granted',
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted',
+            'functionality_storage': 'granted'
+          });
+        }
+      }
+    }
+  } catch (e) {}
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   // Ottieni l'elemento dell'immagine Senza Lattosio
   var lactoseFreeImg = document.getElementById("lactose-lactose-free");
